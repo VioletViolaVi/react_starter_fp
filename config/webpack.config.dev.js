@@ -6,7 +6,7 @@ config.devServer = {
   contentBase: path.resolve('src'),
   port: 8080,
   hot: true,
-  open: false,
+  open: true,
   watchContentBase: true
 };
 
