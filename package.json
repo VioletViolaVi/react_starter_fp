@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest --watch --setupFilesAfterEnv ./test/setupTests.js",
+    "test": "jest --watch --setupFilesAfterEnv ./src/test/setupTests.js",
     "dev": "webpack-cli serve --mode development --config ./config/webpack.config.dev.js",
     "build": "webpack --config ./config/webpack.config.prod.js"
   },
@@ -30,8 +30,8 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/mocks/mock-file.js",
-      "\\.(css|less)$": "<rootDir>/test/mocks/mock-style.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/mock-file.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/mock-style.js"
     }
   }
 }
